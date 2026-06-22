@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Internal Css Example Second Priority -->
+        <style>
+        /* class selectors Priority second */
+       .heading1{
+        color: blue;
+        font-size: 80px;
+        background-color: azure;
+       }
+       .heading2{
+        color: brown;
+        font-size: 60px;
+        background-color: blueviolet;
+       }
+      
+
+      /* id selectors Priority First */
+
+       #heading3{
+        color: black;
+        font-size: 60px;
+       }
+       #headimg4{
+        color: aquamarine;
+        font-size: 50px;
+       }
+       .heading7{
+        color: yellowgreen;
+        background-color: brown;
+       }
+       #heading6{
+        color: blue;
+       }
+        
+     /* Third Priority = Element (Tag) Selector */
+
+       h2{
+        color: deepskyblue;
+        font-size: 43px;
+       }
+       
+    </style>
+    </head>
+    <body>
+        <!-- class selectors Example Second Priority-->
+
+        <h1 class="heading1">Hello Sir</h1>
+        <h1 class="heading2">Hello Sir</h1>
+
+        <h1 class="heading_f_size h_color1 h_bgcolor1">Ravi Jadhav</h1>
+        <h1 class="heading_f_size h_color2 h_bgcolor2">Abhijit Sakhare</h1>
+        <h1 class="heading_f_size h_color3 h_bgcolor3">Ram Tantale</h1>
+        <h1 class="heading7" id="heading6">Hello Its Abhijit</h1>
+
+        <!-- id selectors Example First Priority-->
+        <h1 id="heading3">Welcome TO Solapure</h1>
+        <h1 id="headimg4">Welcome To Satara</h1>
+
+       
+        <!-- Third Priority = Element (Tag) Selector -->
+        <h2>Welcome to fct</h2>
+
+        <!-- Inline Css Example First Priority-->
+
+        <h5 style="color: brown; font-size: 20px;">Welcome To pune</h5>
+
+    </body>
+</html>
