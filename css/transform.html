@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Internal Css Example Second Priority -->
+     <style>
+        /* transform types example */
+       .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 50px;
+       } 
+       .box{
+        background-color: cyan;
+        border-radius: 10px;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 40px;
+        transition: transform 1s ease-in;
+       }
+       .box1:hover{
+        transform: translate(125px,125px);
+       }
+       .box2:hover{
+        transform: translateX(125px);
+       }
+       .box3:hover{
+        transform:translateY(125px) ;
+       }
+       .box4:hover{
+        transform: rotate(-180deg);
+        background-color: aquamarine;
+       }
+       .box5:hover{
+        transform: skewY(50deg);
+       }
+       .box6:hover{
+        transform: scale(1.5);
+       }
+       .box7:hover{
+        transform: rotate(40deg) scale(1.4) translateY(200px);
+       }
+     </style>
+
+</head>
+<body>
+    <!-- transform types example -->
+    <div class="container">
+        <div class="div box box1">translate</div>
+        <div class="div box box2">translateX</div>
+        <div class="div box box3">translateY</div>
+        <div class="div box box4">rotate</div>
+        <div class="div box box5">skew</div>
+        <div class="div box box6">scale</div>
+        <div class="div box box7">Mix</div>
+
+    </div>
+</body>
+</html>

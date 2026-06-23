@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- Internal Css Use Example Second Priority -->
+        <style>
+        /* Pseudo Class Hover Example */
+        h1{
+            color: blueviolet;
+        }
+        h1:hover{
+            color: blue;
+            background-color: yellow;
+            font-size: 60px;
+            text-shadow: 6px 7px red;
+        }
+        .h2-hover:hover{
+            color: blueviolet;
+            background-color: aqua;
+            font-family: cursive;
+            font-size: 80px;
+        }
+        /* Pesudo Class Active Example */
+
+        h3:active{
+            color: brown;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+         /* Pseudo Class Focus Example */
+
+        input:focus{
+            background-color: black;
+            color: white;
+            border: 10px solid yellow;
+        }
+
+         /* Pseudo Class Visited Example */
+
+        a:visited{
+            color: green;
+        }
+        p::first-letter{
+            color: blue;
+            font-size: 20px;
+
+        }
+
+
+    /* Pseudo Element/Selectors Example */
+
+        p::first-line{
+            color: red;
+        }
+    </style>
+    </head>
+    <body>
+        <!-- Pseudo Element/Selectors Example -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint est,
+            ratione cumque, commodi sapiente exercitationem iste blanditiis
+            dicta, quasi accusantium reprehenderit optio. Saepe suscipit
+            nesciunt delectus eligendi magnam quo laboriosam.</p>
+
+        <!-- Pseudo Class Visited Example -->
+        <a href="https://www.facebook.com/" target="_blank">Click Here</a>
+
+        <!-- Pseudo Class Focus Example -->
+        <input type="text" />
+        <!-- Pesudo Class Active Example -->
+        <h3>Hello Madam</h3>
+        <!-- Pseudo Class Hover Example -->
+        <h1>Welcome To Pune</h1>
+        <h2 class="h2-hover">Hello Sir</h2>
+    </body>
+</html>
